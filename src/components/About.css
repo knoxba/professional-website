@@ -1,6 +1,6 @@
 .about {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .about-container {
@@ -11,7 +11,7 @@
 .section-header h2 {
   text-align: center;
   margin-bottom: 3rem;
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 2.5rem;
 }
 
@@ -22,19 +22,20 @@
 }
 
 .about-card {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #3498db;
+  box-shadow: 0 10px 30px var(--shadow-dark);
+  border-left: 5px solid var(--accent-primary);
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(30px);
+  border: 1px solid var(--border-color);
 }
 
 .about-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 40px var(--shadow-dark), 0 0 20px var(--shadow-light);
 }
 
 .card-header {
@@ -57,15 +58,16 @@
 }
 
 .description-box {
-  background: #f8f9fa;
+  background: var(--bg-tertiary);
   padding: 1.5rem;
   border-radius: 10px;
-  border-left: 3px solid #27ae60;
+  border-left: 3px solid #64ffda;
+  border: 1px solid var(--border-color);
 }
 
 .description-box p {
   margin: 0;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 

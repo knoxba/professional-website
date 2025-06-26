@@ -1,11 +1,15 @@
 /* App.css */
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
 }
 
 section {
   padding: 80px 20px;
+  background-color: var(--bg-primary);
 }
 
 

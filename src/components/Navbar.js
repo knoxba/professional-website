@@ -6,6 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -52,38 +53,20 @@ function Navbar() {
             >
               Experience
             </motion.a>
-            <motion.a
-              href="#skills"
-              whileHover={{ scale: 1.1, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              Skills
-            </motion.a>
-            <motion.a
-              href="#projects"
-              whileHover={{ scale: 1.1, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              Projects
-            </motion.a>
+            {/* Skills and Projects links removed - now integrated into Hero component */}
             <motion.a
               href="#contact"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               Contact
             </motion.a>
           </div>
         </div>
+
         <div className="navbar-hamburger" onClick={() => setIsOpen(!isOpen)}>
           <span></span>
           <span></span>

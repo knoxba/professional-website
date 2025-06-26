@@ -1,8 +1,9 @@
 
 .footer {
-  background-color: #333;
-  color: white;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, #000000 100%);
+  color: var(--text-primary);
   padding: 40px 20px 20px;
+  border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
@@ -27,13 +28,13 @@
 }
 
 .footer-section a {
-  color: white;
+  color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: #007bff;
+  color: var(--accent-primary);
 }
 
 .social-links {
@@ -45,7 +46,8 @@
   text-align: center;
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
 }
 
 @media (max-width: 768px) {

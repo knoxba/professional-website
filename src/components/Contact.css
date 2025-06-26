@@ -1,6 +1,6 @@
 .contact {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .contact-container {
@@ -11,7 +11,7 @@
 .section-header h2 {
   text-align: center;
   margin-bottom: 3rem;
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 2.5rem;
 }
 
@@ -22,19 +22,20 @@
 }
 
 .contact-info-card, .contact-form-card {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #3498db;
+  box-shadow: 0 10px 30px var(--shadow-dark);
+  border-left: 5px solid var(--accent-primary);
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(30px);
+  border: 1px solid var(--border-color);
 }
 
 .contact-info-card:hover, .contact-form-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 40px var(--shadow-dark), 0 0 20px var(--shadow-light);
 }
 
 .card-header {
@@ -57,15 +58,16 @@
 }
 
 .description-box {
-  background: #f8f9fa;
+  background: var(--bg-tertiary);
   padding: 1.5rem;
   border-radius: 10px;
-  border-left: 3px solid #27ae60;
+  border-left: 3px solid #64ffda;
+  border: 1px solid var(--border-color);
 }
 
 .description-box p {
   margin: 0 0 1.5rem 0;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -78,8 +80,10 @@
   align-items: center;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  background: white;
+  background: var(--bg-tertiary);
   border-radius: 8px;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
 }
 
 .contact-icon {
@@ -118,9 +122,10 @@
 
 .contact-form {
   padding: 1.5rem;
-  background: #f8f9fa;
+  background: var(--bg-tertiary);
   border-radius: 10px;
-  border-left: 3px solid #27ae60;
+  border-left: 3px solid #64ffda;
+  border: 1px solid var(--border-color);
 }
 
 .form-group {
@@ -130,7 +135,7 @@
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -138,17 +143,19 @@
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #e9ecef;
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
   box-sizing: border-box;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: var(--accent-primary);
 }
 
 .form-group textarea {

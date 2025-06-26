@@ -1,13 +1,13 @@
 /* Projects.css */
 .projects {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .projects h2 {
   text-align: center;
   margin-bottom: 3rem;
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 2.5rem;
 }
 
@@ -20,19 +20,20 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #e74c3c;
+  box-shadow: 0 10px 30px var(--shadow-dark);
+  border-left: 5px solid #ff6b6b;
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(30px);
+  border: 1px solid var(--border-color);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 40px var(--shadow-dark), 0 0 20px var(--shadow-light);
 }
 
 .project-header {
@@ -58,7 +59,7 @@
   margin-bottom: 1.5rem;
   border-radius: 10px;
   overflow: hidden;
-  border: 3px solid #3498db;
+  border: 3px solid var(--accent-primary);
 }
 
 .project-image img {
@@ -73,16 +74,17 @@
 }
 
 .description-box {
-  background: #f8f9fa;
+  background: var(--bg-tertiary);
   padding: 1.5rem;
   border-radius: 10px;
-  border-left: 3px solid #27ae60;
+  border-left: 3px solid #64ffda;
   margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
 }
 
 .description-box p {
   margin: 0;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -91,8 +93,8 @@
 }
 
 .tech-tag {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-  color: #2c3e50;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   margin-right: 0.5rem;
@@ -100,7 +102,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(255, 154, 158, 0.3);
+  box-shadow: 0 2px 8px var(--shadow-dark);
 }
 
 .project-links {
